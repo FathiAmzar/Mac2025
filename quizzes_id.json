@@ -1,17 +1,16 @@
 {
     "quizzes": [
-      {
-        "id": 1,
-        "question": "Bagaimana cara mengatakan 'Hello' dalam bahasa Inggris?",
-        "options": ["Hola", "Bonjour", "Hello", "Ciao"],
-        "answer": "Hello"
-      },
-      {
-        "id": 2,
-        "question": "Apa kata bahasa Inggris untuk 'Dua'?",
-        "options": ["One", "Two", "Three", "Four"],
-        "answer": "Two"
-      }
+        {
+            "id": 1,
+            "question": "How do you say 'Hello' in Indonesian?",
+            "options": ["Halo", "Bonjour", "Hello", "Ciao"],
+            "answer": "Halo"
+        },
+        {
+            "id": 2,
+            "question": "What is the Indonesian word for 'Two'?",
+            "options": ["Satu", "Dua", "Tiga", "Empat"],
+            "answer": "Dua"
+        }
     ]
-  }
-  
+}
