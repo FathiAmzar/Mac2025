@@ -1,17 +1,16 @@
 {
     "quizzes": [
-      {
-        "id": 1,
-        "question": "Come si dice 'Hello' in inglese?",
-        "options": ["Hola", "Bonjour", "Hello", "Ciao"],
-        "answer": "Hello"
-      },
-      {
-        "id": 2,
-        "question": "Qual è la parola inglese per 'Due'?",
-        "options": ["One", "Two", "Three", "Four"],
-        "answer": "Two"
-      }
+        {
+            "id": 1,
+            "question": "How do you say 'Hello' in Italian?",
+            "options": ["Hola", "Bonjour", "Hello", "Ciao"],
+            "answer": "Ciao"
+        },
+        {
+            "id": 2,
+            "question": "What is the Italian word for 'Two'?",
+            "options": ["Uno", "Due", "Tre", "Quattro"],
+            "answer": "Due"
+        }
     ]
-  }
-  
+}
