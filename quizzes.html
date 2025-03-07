@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quizzes - Learn English</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <div class="navbar">
+    <a href="index.html" class="logo">🏠 My Website</a>
+    <span class="hamburger">☰</span>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="lessons.html">Lessons</a></li>
+      <li><a href="quizzes.html">Quizzes</a></li>
+      <li><a href="achievements.html">Achievements</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- Main Content Area with Sidebar and Quiz Container -->
+  <div class="container lessons-layout">
+    <!-- Left Sidebar: Language Selector -->
+    <div class="language-selector">
+      <h3>Select Language</h3>
+      <ul>
+        <li><button onclick="loadQuizzesByLanguage('it')">Italian</button></li>
+        <li><button onclick="loadQuizzesByLanguage('id')">Indonesian</button></li>
+      </ul>
+    </div>
+    <!-- Right Content Area: Quiz -->
+    <div class="lessons-container">
+      <h1>Quiz</h1>
+      <div id="quiz-container"></div>
+      <button id="submit-quiz">Submit Answers</button>
+      <p id="quiz-result"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

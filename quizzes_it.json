@@ -1,0 +1,17 @@
+{
+    "quizzes": [
+      {
+        "id": 1,
+        "question": "Come si dice 'Hello' in inglese?",
+        "options": ["Hola", "Bonjour", "Hello", "Ciao"],
+        "answer": "Hello"
+      },
+      {
+        "id": 2,
+        "question": "Qual è la parola inglese per 'Due'?",
+        "options": ["One", "Two", "Three", "Four"],
+        "answer": "Two"
+      }
+    ]
+  }
+  

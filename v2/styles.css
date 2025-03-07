@@ -1,0 +1,177 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Navigation Bar */
+nav {
+    background: #007bff;
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s ease-in-out;
+}
+
+nav:hover {
+    background: #0056b3;
+}
+
+.nav-links {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-links li {
+    margin: 0 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #ffdd57;
+}
+
+/* Hero Section Animation */
+.hero {
+    text-align: center;
+    padding: 80px;
+    background: linear-gradient(to right, #00c6ff, #0072ff);
+    color: white;
+    opacity: 0;
+    animation: fadeIn 1.5s ease-in-out forwards;
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Animated Buttons */
+.btn {
+    display: inline-block;
+    background: #ffdd57;
+    color: #333;
+    padding: 12px 25px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn:hover {
+    background: #ffbb33;
+    transform: scale(1.1);
+}
+
+/* Lessons Page - Slide-in Animation */
+.lesson-content {
+    padding: 40px;
+    opacity: 0;
+    transform: translateX(-100%);
+    animation: slideIn 1s ease-in-out forwards;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Achievements Page - Bounce Effect */
+.achievements ul {
+    list-style: none;
+    padding: 0;
+}
+
+.achievements li {
+    background: white;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    animation: bounce 1.2s ease-in-out infinite alternate;
+}
+
+@keyframes bounce {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(-5px);
+    }
+}
+
+/* Contact Page - Interactive Form Fields */
+.contact form {
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+    background: white;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    opacity: 0;
+    animation: fadeIn 1.5s ease-in-out forwards;
+}
+
+.contact input, .contact textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    transition: border-color 0.3s;
+}
+
+.contact input:focus, .contact textarea:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero {
+        padding: 40px;
+    }
+
+    .lesson-content {
+        padding: 20px;
+    }
+
+    .contact form {
+        width: 90%;
+    }
+}

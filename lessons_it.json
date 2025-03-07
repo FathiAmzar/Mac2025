@@ -1,0 +1,17 @@
+{
+    "lessons": [
+      {
+        "id": 1,
+        "title": "Saluti di base",
+        "content": "Ciao, Buongiorno, Buonasera, Buonanotte",
+        "example": "Esempio: 'Ciao, come stai?'"
+      },
+      {
+        "id": 2,
+        "title": "Numeri",
+        "content": "Uno, Due, Tre, Quattro, Cinque",
+        "example": "Esempio: 'Ho tre mele.'"
+      }
+    ]
+  }
+  
