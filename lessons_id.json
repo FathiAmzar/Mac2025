@@ -1,17 +1,16 @@
 {
     "lessons": [
-      {
-        "id": 1,
-        "title": "Salam Dasar",
-        "content": "Halo, Selamat Pagi, Selamat Sore, Selamat Malam",
-        "example": "Contoh: 'Halo, apa kabar?'"
-      },
-      {
-        "id": 2,
-        "title": "Angka",
-        "content": "Satu, Dua, Tiga, Empat, Lima",
-        "example": "Contoh: 'Saya punya tiga apel.'"
-      }
+        {
+            "id": 1,
+            "title": "Basic Greetings in Indonesian",
+            "content": "Halo, Selamat Pagi, Selamat Sore, Selamat Malam",
+            "example": "Example: 'Halo, apa kabar?'"
+        },
+        {
+            "id": 2,
+            "title": "Numbers in Indonesian",
+            "content": "Satu, Dua, Tiga, Empat, Lima",
+            "example": "Example: 'Saya punya tiga apel.'"
+        }
     ]
-  }
-  
+}
