@@ -2,15 +2,15 @@
     "lessons": [
         {
             "id": 1,
-            "title": "Basic Greetings in Indonesian",
-            "content": "Halo, Selamat Pagi, Selamat Sore, Selamat Malam",
-            "example": "Example: 'Halo, apa kabar?'"
+            "title": "Basic Greetings in Italian",
+            "content": "Ciao, Buongiorno, Buonasera, Buonanotte",
+            "example": "Example: 'Ciao, come stai?'"
         },
         {
             "id": 2,
-            "title": "Numbers in Indonesian",
-            "content": "Satu, Dua, Tiga, Empat, Lima",
-            "example": "Example: 'Saya punya tiga apel.'"
+            "title": "Numbers in Italian",
+            "content": "Uno, Due, Tre, Quattro, Cinque",
+            "example": "Example: 'Ho tre mele.'"
         }
     ]
 }
