@@ -1,0 +1,23 @@
+{
+    "lessons": [
+      {
+        "id": 1,
+        "title": "Basic Greetings",
+        "content": "Learn common greetings such as 'Hello', 'Hi', 'Good Morning', 'Good Afternoon', and 'Good Night'.",
+        "example": "Example: 'Hello, how are you?'"
+      },
+      {
+        "id": 2,
+        "title": "Numbers",
+        "content": "Practice counting and using numbers in everyday situations, from one to ten and beyond.",
+        "example": "Example: 'I have three apples.'"
+      },
+      {
+        "id": 3,
+        "title": "Simple Present Tense",
+        "content": "Understand the structure of the simple present tense and learn how to form correct sentences with proper subject-verb agreement.",
+        "example": "Example: 'She goes to school every day.'"
+      }
+    ]
+  }
+  
