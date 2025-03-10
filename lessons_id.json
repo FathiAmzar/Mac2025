@@ -1,16 +1,23 @@
 {
     "lessons": [
-        {
-            "id": 1,
-            "title": "Basic Greetings in Indonesian",
-            "content": "Halo, Selamat Pagi, Selamat Sore, Selamat Malam",
-            "example": "Example: 'Halo, apa kabar?'"
-        },
-        {
-            "id": 2,
-            "title": "Numbers in Indonesian",
-            "content": "Satu, Dua, Tiga, Empat, Lima",
-            "example": "Example: 'Saya punya tiga apel.'"
-        }
+      {
+        "id": 1,
+        "title": "Salam Dasar",
+        "content": "Pelajari salam-salam umum seperti 'Halo', 'Hai', 'Selamat Pagi', 'Selamat Siang', dan 'Selamat Malam'.",
+        "example": "Contoh: 'Halo, apa kabar?'"
+      },
+      {
+        "id": 2,
+        "title": "Angka",
+        "content": "Latih menghitung dan menggunakan angka dalam situasi sehari-hari, dari satu sampai sepuluh dan seterusnya.",
+        "example": "Contoh: 'Saya memiliki tiga apel.'"
+      },
+      {
+        "id": 3,
+        "title": "Tense Present Sederhana",
+        "content": "Pahami struktur tense present sederhana dan pelajari cara membentuk kalimat yang benar dengan kesesuaian antara subjek dan kata kerja.",
+        "example": "Contoh: 'Dia pergi ke sekolah setiap hari.'"
+      }
     ]
-}
+  }
+  

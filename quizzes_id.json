@@ -1,16 +1,32 @@
 {
     "quizzes": [
-        {
-            "id": 1,
-            "question": "How do you say 'Hello' in Indonesian?",
-            "options": ["Halo", "Bonjour", "Hello", "Ciao"],
-            "answer": "Halo"
-        },
-        {
-            "id": 2,
-            "question": "What is the Indonesian word for 'Two'?",
-            "options": ["Satu", "Dua", "Tiga", "Empat"],
-            "answer": "Dua"
-        }
+      {
+        "id": 1,
+        "question": "Tata Bahasa: Kalimat mana yang benar?",
+        "options": [
+          "Kamu sudah makan?",
+          "Kamu makan sudah?"
+        ],
+        "answer": "Kamu sudah makan?"
+      },
+      {
+        "id": 2,
+        "question": "Kosakata: Apa lawan kata dari 'cepat'?",
+        "options": [
+          "Cepat",
+          "Lambat"
+        ],
+        "answer": "Lambat"
+      },
+      {
+        "id": 3,
+        "question": "Penulisan: Mana kata yang menggunakan huruf kapital dengan benar?",
+        "options": [
+          "indonesia",
+          "Indonesia"
+        ],
+        "answer": "Indonesia"
+      }
     ]
-}
+  }
+  
