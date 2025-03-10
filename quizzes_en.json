@@ -1,0 +1,32 @@
+{
+    "quizzes": [
+      {
+        "id": 1,
+        "question": "Grammar: Which sentence is correct?",
+        "options": [
+          "She go to school every day.",
+          "She goes to school every day."
+        ],
+        "answer": "She goes to school every day."
+      },
+      {
+        "id": 2,
+        "question": "Vocabulary: What is the opposite of “fast”?",
+        "options": [
+          "Quick",
+          "Slow"
+        ],
+        "answer": "Slow"
+      },
+      {
+        "id": 3,
+        "question": "Pronunciation: Which word has a silent letter?",
+        "options": [
+          "Know",
+          "Cat"
+        ],
+        "answer": "Know"
+      }
+    ]
+  }
+  
