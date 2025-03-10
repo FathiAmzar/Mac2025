@@ -66,7 +66,7 @@ body {
     flex-direction: column;
     background-color: #007bff;
     position: absolute;
-    top: 60px;
+    top: 77px;
     left: 0;
     width: 100%;
     padding: 10px 0;
@@ -135,6 +135,24 @@ body {
 
 .btn:hover {
   background: #ffc107;
+}
+
+@media (max-width: 480px) {
+  .banner {
+    height: 50vh; /* reduce height for mobile */
+  }
+  .banner h1 {
+    font-size: 32px; /* scale down the headline */
+    margin-bottom: 10px;
+  }
+  .banner p {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  .btn {
+    padding: 10px 20px;
+    font-size: 16px;
+  }
 }
 
 /* Main container */
@@ -294,6 +312,22 @@ button {
 
 button:hover {
   background-color: #0056b3;
+}
+
+@media (max-width: 480px) {
+  /* full width and add spacing */
+  .language-selector {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  /* Adjust header size for lesson & quiz */
+  .lessons-container h1 {
+    font-size: 28px;
+    margin-bottom: 15px;
+  }
+  .lesson-card {
+    padding: 10px;
+  }
 }
 
 /* achievement section */
