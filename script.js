@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-    // Toggle hamburger menu for responsive navigation
+    // Toggle hamburger menu for mobile
     const menuToggle = document.querySelector(".hamburger");
     const navLinks = document.querySelector(".nav-links");
     if (menuToggle) {
@@ -8,24 +8,24 @@ document.addEventListener("DOMContentLoaded", function () {
       });
     }
   
-    // If the quizzes page exists, load default language (Italian)
+    // cek the quizzes page exists, then load default language (english)
     if (document.getElementById("quiz-container")) {
-      loadQuizzesByLanguage('it');
+      loadQuizzesByLanguage('en');
     }
     
-    // If the lessons page exists, load default language (Italian)
+    // cek the lessons page exists, then load default language (english)
     if (document.getElementById("lessons-list")) {
-      loadLessonsByLanguage('it');
+      loadLessonsByLanguage('en');
     }
   });
   
-  // -------------------- QUIZZES CODE --------------------
+  // QUIZ CODE 
   
   // Load quizzes from the JSON file based on selected language
   function loadQuizzesByLanguage(language) {
     let file = '';
-    if (language === 'it') {
-      file = 'quizzes_it.json';
+    if (language === 'en') {
+      file = 'quizzes_en.json';
     } else if (language === 'id') {
       file = 'quizzes_id.json';
     } else {
@@ -39,7 +39,7 @@ document.addEventListener("DOMContentLoaded", function () {
         const quizContainer = document.getElementById("quiz-container");
         quizContainer.innerHTML = "";
         
-        // Refresh the submit button to remove any previous event listeners
+        // Reset submit button to remove previous event listeners
         const submitButton = document.getElementById("submit-quiz");
         submitButton.replaceWith(submitButton.cloneNode(true));
         
@@ -64,7 +64,7 @@ document.addEventListener("DOMContentLoaded", function () {
       .catch(error => console.error("Error loading quizzes:", error));
   }
   
-  // Check Quiz Answers & Save Score in Local Storage
+  // Check quiz answers & save score in local storage
   function checkQuizAnswers(quizzes) {
     let score = 0;
     quizzes.forEach((quiz, index) => {
@@ -79,13 +79,13 @@ document.addEventListener("DOMContentLoaded", function () {
     localStorage.setItem("quizScore", JSON.stringify({ score: score, date: new Date().toISOString() }));
   }
   
-  // -------------------- LESSONS CODE --------------------
+  //  LESSON CODE 
   
   // Load lessons from the JSON file based on selected language
   function loadLessonsByLanguage(language) {
     let file = '';
-    if (language === 'it') {
-      file = 'lessons_it.json';
+    if (language === 'en') {
+      file = 'lessons_en.json';
     } else if (language === 'id') {
       file = 'lessons_id.json';
     } else {
