@@ -23,8 +23,29 @@
 
   <div class="container">
     <h1>Contact Us</h1>
-    <p>Email: uunkoow@gmail.com</p>
-    <p>Phone: +60 17-591 2450</p>
+    <form id="contact-form">
+      <div class="form-group">
+        <label for="username">Username</label>
+        <input type="text" id="username" name="username" placeholder="Your name" required>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Your email" required>
+      </div>
+
+      <div class="form-group">
+        <label for="subject">Subject</label>
+        <input type="text" id="subject" name="subject" placeholder="Subject" required>
+      </div>
+
+      <div class="form-group">
+        <label for="comment">Comment</label>
+        <textarea id="comment" name="comment" placeholder="Your comment" required></textarea>
+      </div>
+
+      <button type="button" id="send-comment">Send Comment</button>
+    </form>
   </div>
 
   <script src="script.js"></script>
