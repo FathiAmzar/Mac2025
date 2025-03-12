@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-  // Toggle mobile menu
+  // Toggle mobile nav
   const hamburger = document.querySelector(".hamburger");
   const navLinks = document.querySelector(".nav-links");
 
@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  // Load lessons by language
+  // load lesson by language
   window.loadLessonsByLanguage = (language) => {
     fetch(`lessons_${language}.json`)
       .then(response => response.json())
@@ -28,12 +28,11 @@ document.addEventListener("DOMContentLoaded", () => {
       .catch(error => console.error("Error loading lessons:", error));
   };
 
-  // Load quizzes by language
+  // load quiz by language
   window.loadQuizzesByLanguage = (language) => {
     fetch(`quizzes_${language}.json`)
       .then(response => response.json())
       .then(data => {
-        // Save quizzes data globally for evaluation later
         window.quizzesData = data.quizzes;
         const quizContainer = document.getElementById("quiz-container");
         if (quizContainer) {
@@ -53,23 +52,30 @@ document.addEventListener("DOMContentLoaded", () => {
       .catch(error => console.error("Error loading quizzes:", error));
   };
 
-  // Submit quiz answers
+  // submit quiz function
   const submitButton = document.getElementById('submit-quiz');
   if (submitButton) {
     submitButton.addEventListener('click', () => {
       let score = 0;
-      // Evaluate each quiz question using the correct name attribute
       quizzesData.forEach((quiz) => {
         const selected = document.querySelector(`input[name="quiz-${quiz.id}"]:checked`);
         if (selected && selected.value === quiz.answer) {
           score++;
         }
       });
-      // Display the quiz result
       const resultElement = document.getElementById('quiz-result');
       if (resultElement) {
         resultElement.textContent = `You scored ${score} out of ${quizzesData.length}`;
       }
+    });
+  }
+
+  // Clear input fields after click "Send comment" button
+  const sendCommentButton = document.getElementById("send-comment");
+  if (sendCommentButton) {
+    sendCommentButton.addEventListener("click", () => {
+
+      document.getElementById("contact-form").reset();
     });
   }
 });
